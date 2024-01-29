@@ -235,7 +235,7 @@ footer{
 
 /* SKILLここから↓ */
 /* 経歴 */
-#about section h1{
+#skill section h1{
     display: block;
     color: #202f55;
     font-weight: bold;
@@ -243,29 +243,29 @@ footer{
     text-align: center;
     margin: 80px 0 80px 0;
 }
-#about section p{
+#skill section p{
     font-size: 20px;
     color: #333;
 }
-#about .timeline{
+#skill .timeline{
     width: 96%;
     max-width: 940px;
     margin: 28px auto;
     padding: 0 0 0 30px;
 }
 
-#about .timeline .list{
+#skill .timeline .list{
     padding-left: 4rem;
     padding-bottom: 2rem;
     counter-increment: section;
     position: relative;
 }
 
-#about .timeline .list:last-child{
+#skill .timeline .list:last-child{
     padding-bottom: 0.5rem;
 }
 
-#about .timeline .list::before{
+#skill .timeline .list::before{
     content: "";
     width: 5px;
     height: 100%;
@@ -274,7 +274,7 @@ footer{
     top: 20px;
     left: 20px;
 }
-#about .timeline .list:last-child::before{
+#skill .timeline .list:last-child::before{
     content: "";
     width: 0;
     height: 0;
@@ -284,7 +284,7 @@ footer{
     left: 20px;
 }
 
-#about .timeline .list::after{
+#skill .timeline .list::after{
     font-size: 0.7rem;
     font-weight: bold;
     background-color: #005c83;
@@ -298,66 +298,66 @@ footer{
     left: -0.8rem;
 }
 
-#about .timeline01 .list:nth-child(1)::after{
+#skill .timeline01 .list:nth-child(1)::after{
     content: "2018年3月";
 }
 
-#about .timeline01 .list:nth-child(2)::after{
+#skill .timeline01 .list:nth-child(2)::after{
     content: "2018年4月　　2023年3月";
 }
 
-#about .timeline01 .list:nth-child(3)::after{
+#skill .timeline01 .list:nth-child(3)::after{
     content: "2022年4月　　2023年3月";
 }
 
-#about .timeline01 .list:nth-child(4)::after{
+#skill .timeline01 .list:nth-child(4)::after{
     content: "2023年8月";
 }
 
 /* 資格 */
 
-#about .timeline .title{
+#skill .timeline .title{
     font-weight:bold;
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
 }
 
-#about .timeline02 .list:nth-child(1)::after{
+#skill .timeline02 .list:nth-child(1)::after{
     content: "2014年11月";
 }
 
-#about .timeline02 .list:nth-child(2)::after{
+#skill .timeline02 .list:nth-child(2)::after{
     content: "2023年8月";
 }
 
-#about .timeline02 .list:nth-child(3)::after{
+#skill .timeline02 .list:nth-child(3)::after{
     content: "2023年10月";
 }
 
-#about .timeline02 .list:nth-child(4)::after{
+#skill .timeline02 .list:nth-child(4)::after{
     content: "2023年10月";
 }
 
-#about .timeline02 .list:nth-child(5)::after{
+#skill .timeline02 .list:nth-child(5)::after{
     content: "2023年12月";
 }
 
-#about .timeline02 .list:nth-child(6)::after{
+#skill .timeline02 .list:nth-child(6)::after{
     content: "2023年12月";
 }
 
-#about .timeline02 .list:nth-child(7)::after{
+#skill .timeline02 .list:nth-child(7)::after{
     content: "2024年1月";
 }
 
-#about .skill{
+#skill .skill{
     width: 96%;
     max-width: 940px;
     margin: 28px auto;
     padding: 0 0 100px 30px;
 }
 
-#about .skill h2{
+#skill .skill h2{
     font-weight: bold;
     padding-left: 1rem;
     border-left: 6px solid #005c83;
@@ -365,7 +365,7 @@ footer{
     margin-bottom: 30px;
 }
 
-#about .skill p{
+#skill .skill p{
     color: #410707;
     margin-bottom: 30px;
 }
