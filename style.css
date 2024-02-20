@@ -592,7 +592,11 @@ input[type="submit"] {
             local("Yu Gothic Medium"),
             local("YuGothic-Regular");
     }
-    .landscape{
-        display: none;
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100em;
+        height: auto;
     }
 }
