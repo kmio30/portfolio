@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* 
 header, nav, #graphic, #contents, footer {
 	width: 100%;
 }
@@ -88,4 +88,25 @@ nav ul li#nav_contact a:hover {
 footer {
 	padding-top: 30px;
 	
+} */
+
+/* モバイルデバイス */
+@media screen and (max-width:480px) {
+    html{
+        font-family: "Meiryo","Arial","MS Pゴシック",sans-serif;
+    }
+
+	nav{
+		width: 80%;
+	}
+
+    /* #photo{
+        max-width: 100%;
+    } */
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
 }

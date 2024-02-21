@@ -581,26 +581,3 @@ input[type="submit"] {
 }
 
 /* CONTACTここまで↑ */
-
-
-/* モバイルデバイス */
-@media screen and (max-width:480px) {
-    @font-face {
-        font-family: "YuGothic-M";
-        font-weight: normal;
-        src: local("YuGothic-Medium"),
-            local("Yu Gothic Medium"),
-            local("YuGothic-Regular");
-    }
-
-    #photo{
-        max-width: 100%;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        width: 100em;
-        height: auto;
-    }
-}
