@@ -96,17 +96,25 @@ footer {
         font-family: "Meiryo","Arial","MS Pゴシック",sans-serif;
     }
 
-	nav{
-		width: 80%;
+	nav ul li{
+		max-width: 100%;
 	}
 
-    /* #photo{
-        max-width: 100%;
-    } */
+	#about,#skill,#skill h1{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#about .about{
+	}
 
     .gallery {
         display: flex;
         flex-direction: column;
         max-width: 100%;
     }
+
+	#portfolio .menu ul li img{
+		width: 150%;
+	}
 }
