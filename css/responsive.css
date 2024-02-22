@@ -100,7 +100,7 @@ footer {
 		max-width: 100%;
 	}
 
-	#about,#skill,#skill h1{
+	#about,#skill,#skill h1,#portfolio,#pohoto,#illustration,#pc,#contact{
 		display: flex;
 		justify-content: space-between;
 	}
