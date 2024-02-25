@@ -7,7 +7,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     height: 100%;
     width: 100%;
 }
@@ -247,7 +247,6 @@ footer {
 /* SKILLここから↓ */
 /* 経歴 */
 #skill section h1 {
-    display: block;
     color: #202f55;
     font-weight: bold;
     font-size: 30px;
