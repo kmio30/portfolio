@@ -95,11 +95,21 @@ footer {
     html{
         font-family: "Meiryo","Arial","MS Pゴシック",sans-serif;
     }
+	nav.nav{
+		width: 100%;
+		margin: 0 auto;
 
-	nav ul li{
-		max-width: 100%;
 	}
-
+	nav.nav ul.item {
+		flex-wrap: wrap;
+		padding-left: 18%;
+	}
+	nav.nav ul.item li.list{
+		width: 33%;
+	}
+	nav.nav ul.item li.list a {
+		font-size: 1rem;
+	}
 	#about,#skill,#portfolio,#pohoto,#illustration,#pc,#contact{
 		display: flex;
 		justify-content: space-between;
@@ -120,6 +130,9 @@ footer {
         flex-direction: column;
         max-width: 100%;
     }
+	#portfolio .menu ul {
+		display: block;
+	}
 
 	#portfolio .menu ul li img{
 		width: 150%;
@@ -129,5 +142,41 @@ footer {
 	#contact .nav{
 		display: flex;
 		flex-wrap: nowrap;
+	}
+	#photo .photo .gallery {
+		display: grid;
+  		width: fit-content;
+  		margin-left: -4%;
+  		grid-template-columns: repeat(2, auto);
+	
+	}
+	
+	#photo .gallery .landscape {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#illustration .illust .topics {
+		display: grid;
+  		width: fit-content;
+  		margin-left: -4%;
+  		grid-template-columns: repeat(2, auto);
+	}
+	#illustration .illust .topics .pic {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	#illustration .illust .topics .pic img{
+		width: 200%;
+	}
+	#pc .flex {
+		display: block;
+		flex-wrap: nowrap;
+		margin-left: -10%;
+	}
+	#pc .contents .menu {
+		width: 	100%;
+		padding: 20px 20px 50px;
+		box-sizing: border-box;
 	}
 }
