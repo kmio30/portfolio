@@ -1,54 +1,28 @@
-const slide = document.getElementById('slide');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const indicator = document.getElementById('indicator');
-const lists = document.querySelectorAll('.list');
-const totalSlides = lists.length;
-let count = 0;
-let autoPlayInterval;
-function updateListBackground() {
-    for (let i = 0; i < lists.length; i++) {
-      lists[i].style.backgroundColor = i === count % totalSlides ? '#485da9' : '#fff';
+$(function(){
+  /*=================================================
+  // カルーセル用 jQueryプラグイン「slick」
+  // マニュアル：https://kenwheeler.github.io/slick/
+  ===================================================*/
+  $('#slider').slick({
+    autoplay: true,                         // 自動再生オン
+    autoplaySpeed: 3000,                    // スライドを3秒で切り替え
+    arrows: true,                           // 左右の矢印を表示
+    dots: true,                             // ドット（ページ送り）を表示
+    slidesToShow: 1,                        // スライドを1枚表示（※centerModeをtrueにすると両端に2枚見切れた状態になる）
+    centerMode: true, 
+    variableWidth:true,                      // センターモード（両端が見切れた状態になる）
+    centerPadding: '0%',                   // 見切れたコンテンツの幅を18%に設定
+    prevArrow:'<div class="prev"></div>',   // 前へ矢印のHTMLを変更する
+    nextArrow:'<div class="next"></div>',   // 次へ矢印のHTMLを変更する
+    responsive: [              // レスポンシブの設定
+    {
+      breakpoint: 900,       // 900px以下の場合に適用
+      settings: {
+        
+        variableWidth:false,  
+        centerMode: false    // センターモードをオフにする
+      }
     }
-  }
-  function nextClick() {
-    slide.classList.remove(`slide${count % totalSlides + 1}`);
-    count++;
-    slide.classList.add(`slide${count % totalSlides + 1}`);
-    updateListBackground();
-  }
-  function prevClick() {
-    slide.classList.remove(`slide${count % totalSlides + 1}`);
-    count--;
-    if (count < 0) count = totalSlides - 1;
-    slide.classList.add(`slide${count % totalSlides + 1}`);
-    updateListBackground();
-  }
-function startAutoPlay(){
-    autoPlayInterval = setInterval(nextClick,3000);
-}
-function resetAutoPlayIterval(){
-    clearInterval(autoPlayInterval);
-    startAutoPlay();
-}
-next.addEventListener('click', () => {
-    nextClick();
-    resetAutoPlayIterval();
+  ]
   });
-  prev.addEventListener('click', () => {
-    prevClick();
-    resetAutoPlayInterval();
-  });
-  indicator.addEventListener('click', (event) => {
-    if (event.target.classList.contains('list')) {
-      const index = Array.from(lists).indexOf(event.target);
-      slide.classList.remove(`slide${count % totalSlides + 1}`);
-      count = index;
-      slide.classList.add(`slide${count % totalSlides + 1}`);
-      updateListBackground();
-      resetAutoPlayInterval();
-    }
-  });
-startAutoPlay();{
-
-};
+});
