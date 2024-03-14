@@ -20,6 +20,11 @@
 	nav.nav ul.item li.list a {
 		font-size: 1rem;
 	}
+
+	#slider img{
+		width: 75%;
+	}
+	
 	#about,#skill,#portfolio,#pohoto,#illustration,#pc,#contact{
 		display: flex;
 		justify-content: space-between;
